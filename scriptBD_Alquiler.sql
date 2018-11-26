@@ -2,7 +2,7 @@
 show DATABASEs;
 
 /*Eliminar bd alquiler*/
-DROP DATABASE dbalquiler;
+DROP TABLE ubigeo_codubi;
 
 /*Crear nustra bd alquiler teniendo en cuenta la configuracion de caracteres*/
 CREATE DATABASE dbalquiler DEFAULT CHARACTER set utf8;
@@ -34,3 +34,20 @@ CREATE TABLE Persona
     PASPER VARCHAR(50),
     CONSTRAINT COOPPER_PK PRIMARY KEY (CODPER)
 );
+
+/*verificar la estructura de la tabla persona*/
+show COLUMNs in Persona;
+
+/*crar la tabla ubigeo*/
+CREATE TABLE UBIGEO
+(
+    CODUBI CHAR(6),
+    DISUBI VARCHAR(100),
+    PROUBI VARCHAR(100),
+    DEPUBI VARCHAR(100),
+    CONSTRAINT CODUBI_PK PRIMARY KEY (CODUBI)
+);
+
+/*verificar la estructura de la tabla UBIGEO*/
+
+show COLUMNs in ubigeo;
